@@ -6,7 +6,7 @@ const url = (category) => {
 };
 
 export const getList = () => {
-  return axiosHelper.get(`https://60122a9f5fffd800170894b8.mockapi.io/DangCap1/tasks`);
+  return axiosHelper.get(`https://6012349784695f0017779d27.mockapi.io/vanh/product`);
 };
 // export const getList = (payload) => {
 //   const { cate } = payload;
