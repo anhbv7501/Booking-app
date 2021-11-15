@@ -74,7 +74,6 @@ function Cart(){
                      Xóa
                     </button>
                   </td>
-                  
                 </tr>
               </tbody>
               <tfoot>
