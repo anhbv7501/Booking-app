@@ -1,0 +1,56 @@
+<div xmlns:th="http://www.thymeleaf.org" th:replace="~{/layout/index :: dynamic(~{::main})}">
+<body>
+    <main>
+        <div class="panel panel-default">
+            <div class="panel-heading">Register</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-sm-4 text-center">
+                        <label for="photo">
+                        <img ng-src="{{'/assets/images/' + form.photo}}" style="max-width: 100%;height: 150px;">
+                        </label>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <div>UserName</div>
+                                <input ng-model= "form.username" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <div>Password</div>
+                                <input ng-model= "form.password" class="form-control" type="password">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <div>FullName</div>
+                                <input ng-model= "form.fullname" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <div>Photo</div>
+                                <input type="file" class="form-control" id="photo"
+                                onchange="angular.element(this).scope().imageChanged(this.files)">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <div>Email</div>
+                                <input ng-model= "form.email" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer text-center">
+                <button ng-click="create()" class="btn btn-primary">
+                    <b class="glyphicon glyphicon-plus"></b>Register
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+</div>

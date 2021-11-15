@@ -1,5 +1,5 @@
 const constants = {
-    API_URL: 'https://60122a9f5fffd800170894b8.mockapi.io/DangCap1/',
+    API_URL: 'https://6012349784695f0017779d27.mockapi.io/vanh/',
     REGEX_EMAIL: /^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i,
     REGEX_CURRENCY: /(\d)(?=(\d{3})+(?!\d))/g,
     SIZE_PER_PAGE: 10,
